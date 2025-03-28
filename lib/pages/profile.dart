@@ -5,11 +5,15 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Profile",style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.bold
-        ),),),
+      body: Container(
+        width: 300,
+        height: 200,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(40),
+        ),
+        child: Image.asset("images\tomato-sauce-jar-2 1.png",fit: BoxFit.contain,),
+      ),
     );
   }
 }
